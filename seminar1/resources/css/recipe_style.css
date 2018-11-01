@@ -1,0 +1,59 @@
+.container
+{
+	margin: 1em;
+	width: auto;
+	height: 22em;
+}
+
+.recipe-ingredients
+{
+	position: relative;
+	width: auto;
+	float: left;
+	margin-left: 12em;
+	height: auto;
+}
+
+.container img
+{
+	margin-top: 3%;
+	margin-left: 5%;
+	border-radius: 15px;
+}
+
+.recipe-ingredients ul
+{
+	text-align: left;
+	margin-left: .5em;
+	max-width: 400px;
+	list-style-type: circle;
+}
+
+.recipe-ingredients ol
+{
+	font-family: Arial, sans-serif;
+	text-align: left;
+	margin-left: .5em;
+	list-style-type: decimal;
+	max-width: 400px;
+}
+
+.comments
+{
+	margin-top: 10px;
+}
+
+.comments p
+{
+	text-align: center;
+	font-style: italic;
+	margin: auto;
+}
+
+.comments img
+{
+	transform: rotate(30deg);
+	margin: auto;
+	float: right;
+	margin-right: 30em;
+}
