@@ -1,0 +1,37 @@
+.cal_container
+{
+  margin-left: 20px;
+}
+
+#days td
+{
+  height: 15px;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+table
+{
+  background: #fff;
+  border-collapse: collapse;
+  color: #222;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  text-align: center;
+  margin-left: 15em;
+}
+
+td
+{
+  height: 110px;
+  width: 110px;
+  border: .3em solid #333;
+  color: #444;
+  line-height: 7em;
+  vertical-align: bottom;
+}
+
+td img
+{
+  display: block;
+}
