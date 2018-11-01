@@ -17,7 +17,6 @@ table
   color: #222;
   font-family: Arial, sans-serif;
   font-size: 13px;
-  text-align: center;
   margin-left: 15em;
 }
 
@@ -28,7 +27,8 @@ td
   border: .3em solid #333;
   color: #444;
   line-height: 7em;
-  vertical-align: bottom;
+  vertical-align: top;
+  text-align: center;
 }
 
 td img
