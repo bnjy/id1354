@@ -19,7 +19,6 @@
 	margin: 3%;
 	border-radius: 15px;
 	height: auto;
-	text-align: center;
 }
 
 .recipe-ingredients ul
@@ -55,6 +54,17 @@
 {
 	transform: rotate(30deg);
 	margin: auto;
-	float: right;
-	margin-right: 30em;
+	display: block;
+}
+
+@media only screen and (max-width: 480px) {
+
+.container img {
+	display: none;
+}
+
+.container {
+		width: auto;
+}
+
 }
