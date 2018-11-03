@@ -64,7 +64,21 @@
 }
 
 .container {
-		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+		width: 340px;
+		text-align: center;
+}
+
+.recipe-ingredients ul
+{
+	text-align: center;
+	list-style-type: none;
+}
+
+.recipe-ingredients ol
+{
+	text-align: center;
 }
 
 }

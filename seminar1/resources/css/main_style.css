@@ -109,9 +109,19 @@ p
 
 @media only screen and (max-width: 480px) {
 
-	.navbar {
-			float: none;
-			width: 100%;
+	.head{
+		margin-left: auto;
+		margin-right: auto;
+		width: 340px;
+		text-align: center;
+	}
+
+	.nav-container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 336px;
+		font-size: .8em;
+		text-align: center;
 	}
 
 }
