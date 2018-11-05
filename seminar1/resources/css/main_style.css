@@ -106,6 +106,10 @@ p
 
 @media only screen and (max-width: 480px) {
 
+	h1{
+		font-size: 3em;
+	}
+
 	.head{
 		margin-left: auto;
 		margin-right: auto;
