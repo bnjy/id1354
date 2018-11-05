@@ -98,6 +98,12 @@ p
   color: black;
 }
 
+.navbar a.active
+{
+	background-color: #59C43C;
+	color: white;
+}
+
 @media only screen and (max-width: 480px) {
 
 	.head{
