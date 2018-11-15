@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['login-submit'])){
 
-  require 'dhb.inc.php';
+  require '/Users/Roth/Sites/seminar2/resources/includes/dbh.inc.php';
 
   $mailuid = $_POST['mailuid'];
   $password = $_POST['pwd'];
