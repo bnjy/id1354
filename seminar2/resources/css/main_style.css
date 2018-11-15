@@ -117,7 +117,10 @@ p
 	width: 130px;
 	margin-left: auto;
 	margin-right: auto;
-
+}
+.php-message{
+	text-align: center;
+	position: relative;
 }
 
 @media only screen and (max-width: 480px) {

@@ -19,13 +19,12 @@
         <h2>See our <a href="calendar.html">calendar</a> for recipes.</h2>
         <?php
         if(isset($_SESSION['userId'])){
-          echo '<p>You are logged in!</p>';
+          echo '<div class="php-message"><p>You are logged in!</p></div>';
         } else{
-          echo '<p>You are logged out!</p>';
+          echo '<div class="php-message"><p>You are logged out!</p></div>';
         }
         ?>
       </main>
-
     </div>
   </body>
 </html>
