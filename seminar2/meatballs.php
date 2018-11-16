@@ -15,13 +15,16 @@ include 'resources/includes/dbh.inc.php';
   </head>
 
 <body>
+  
 <div class="bg-image">
   <header>
     <?php require 'resources/fragments/header.php' ?>
   </header>
 
 <main>
+
   <h1>Meatballs</h1>
+
   <div class ="container">
         <div class="recipe-ingredients">
           <p>Ingredients:</p>
@@ -55,7 +58,8 @@ include 'resources/includes/dbh.inc.php';
 
     </div>
 
-    <?php require 'resources/fragments/commentForm.php' ?>
+    <?php require 'resources/fragments/commentForm.php'?>
+    <?php require 'resources/includes/getComments.php'?>
 
   </main>
   </div>

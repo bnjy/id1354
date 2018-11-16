@@ -12,4 +12,6 @@
             VALUES ('$uidComment','$commentDate','$message')";
 
     $result = $connComment->query($sql);
-?>
+
+    header("Location: ../../index.php?comment=success");
+    exit();

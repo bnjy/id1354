@@ -75,6 +75,14 @@ button{
 	cursor: pointer;
 }
 
+.comment-box {
+	width: 815px;
+	padding: 20px;
+	margin-bottom: 4px;
+	background-color: #fff;
+	border-radius: 4px;
+}
+
 @media only screen and (max-width: 480px) {
 
 .container img {
