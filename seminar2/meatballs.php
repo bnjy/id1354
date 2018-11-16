@@ -1,3 +1,8 @@
+<?php
+date_default_timezone_set('Europe/Stockholm');
+include 'resources/includes/dbh.inc.php';
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -50,13 +55,7 @@
 
     </div>
 
-    <div class="comments">
-      <p>"Wow. Such taste. Very flavor. So meat. Wow."</p>
-      <p>- Doge </p>
-
-      <img src="resources/images/doge_approves.png" alt="Doge" style="width:100px;height:100px;">
-
-    </div>
+    <?php require 'resources/fragments/commentForm.php' ?>
 
   </main>
   </div>
