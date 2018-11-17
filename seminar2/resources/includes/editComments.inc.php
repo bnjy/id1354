@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['commentSubmit']))
+if(isset($_POST['commentSubmit']) || isset($_SESSION['userUid']))
   require 'dbh.inc.php';
   $cid = $_POST['cid'];
   $uidComment = $_POST['uidComment'];
