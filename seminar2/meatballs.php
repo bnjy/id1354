@@ -1,8 +1,3 @@
-<?php
-date_default_timezone_set('Europe/Stockholm');
-include 'resources/includes/dbh.inc.php';
- ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,7 +10,7 @@ include 'resources/includes/dbh.inc.php';
   </head>
 
 <body>
-  
+
 <div class="bg-image">
   <header>
     <?php require 'resources/fragments/header.php' ?>
@@ -59,7 +54,7 @@ include 'resources/includes/dbh.inc.php';
     </div>
 
     <?php require 'resources/fragments/commentForm.php'?>
-    <?php require 'resources/includes/getComments.php'?>
+    <?php require 'resources/includes/getComments.inc.php'?>
 
   </main>
   </div>

@@ -1,11 +1,8 @@
 <?php
 if(isset($_POST['login-submit'])){
-
   require '/Users/Roth/Sites/seminar2/resources/includes/dbh.inc.php';
-
   $mailuid = $_POST['mailuid'];
   $password = $_POST['pwd'];
-
   if(empty($mailuid) || empty($password)){
     header("Location: ../../index.php?error=emptyfields");
     exit();
@@ -31,7 +28,6 @@ if(isset($_POST['login-submit'])){
           session_start();
           $_SESSION['userId'] = $row['idUsers'];
           $_SESSION['userUid'] = $row['uidUsers'];
-
           header("Location: ../../index.php?login=success");
           exit();
         }
@@ -42,13 +38,9 @@ if(isset($_POST['login-submit'])){
       }
     }
   }
-
 }
-
 else {
   header("Location: ../../index.php");
   exit();
 }
-
-
 ?>
