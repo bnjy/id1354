@@ -15,6 +15,7 @@
       </header>
 
       <main>
+        <br>
         <h1>Tasty Recipes</h1>
         <h2>See our <a href="calendar.html">calendar</a> for recipes.</h2>
         <?php

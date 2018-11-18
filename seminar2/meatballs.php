@@ -17,9 +17,7 @@
   </header>
 
 <main>
-
   <h1>Meatballs</h1>
-
   <div class ="container">
         <div class="recipe-ingredients">
           <p>Ingredients:</p>
@@ -32,8 +30,7 @@
             <li><p>1/8 teaspoon pepper</p></li>
             <li><p>1 pound ground beef</p></li>
           </ul>
-
-          <p>&nbsp;</p>
+          <br>
           <p>Directions:</p>
           <ol class="directions">
             <li><p>In a large bowl, combine the onion, egg, bread crumbs, milk,
@@ -54,7 +51,7 @@
     </div>
 
     <?php require 'resources/fragments/commentForm.php'?>
-    <?php require 'resources/includes/getComments.inc.php'?>
+    <?php require 'resources/fragments/getComments.php'?>
 
   </main>
   </div>

@@ -2,9 +2,8 @@
 {
 	margin: 1em;
 	padding: 1em;
-	margin-right: auto;
 	margin-left: auto;
-	width: 800px;
+	width: 900px;
 	height: 350px;
 }
 
@@ -38,25 +37,6 @@
 	max-width: 400px;
 }
 
-.comments
-{
-	margin-top: 10px;
-}
-
-.comments p
-{
-	text-align: center;
-	font-style: italic;
-	margin: auto;
-}
-
-.comments img
-{
-	transform: rotate(30deg);
-	margin: auto;
-	display: block;
-}
-
 textarea{
 	width: 400px;
 	height:80px;
@@ -64,24 +44,44 @@ textarea{
 	resize: none;
 }
 
-button{
+.commentSubmit button{
 	width: 100px;
 	height: 30px;
-	background-color: #282828;
+	background-color: #333;
 	border: none;
-	color: #fff;
-	font-family: arial;
-	font-weight: 400;
+	color: #f2f2f2;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
 	cursor: pointer;
 }
 
+.commentSubmit {
+	width: 500px;
+	padding: 20px;
+	margin-bottom: 4px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .comment-box {
-	width: 815px;
+	width: 500px;
 	padding: 20px;
 	margin-bottom: 4px;
 	background-color: #fff;
 	border-radius: 4px;
 	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.comment-box p {
+	font-family: Arial;
+	color: black;
+}
+
+.comment-box button{
+	border: none;
 }
 
 .edit-form {

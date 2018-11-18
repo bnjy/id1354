@@ -6,8 +6,8 @@
     <meta name="description" content="A page with tasty recipes">
     <link rel="stylesheet" type="text/css" href="resources/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="resources/css/main_style.css"/>
-    <link rel="stylesheet" type="text/css" href="resources/css/recipe_style.css"/>
-    <
+    <link rel="stylesheet" type="text/css" href="resources/css/editcomments.css"/>
+
   </head>
 
   <body>
@@ -20,16 +20,16 @@
       require 'resources/includes/dbh.inc.php';
       $cid = $_POST['cid'];
       $uidComment = $_POST['uidComment'];
-      /*$commentDate = $_POST['commentDate'];
-      <input type='hidden' name='commentDate' value='".$commentDate."'>*/
       $message = $_POST['message'];
 
-      echo  "<form method='POST' action='resources/includes/editComments.inc.php'>
+      echo  "<div class='edit-form'>
+              <form method='POST' action='resources/includes/comments.php'>
               <input type='hidden' name='cid' value='".$cid."'>
               <input type='hidden' name='uidComment' value='".$uidComment."'>
               <textarea name='message'>".$message."</textarea><br>
-              <button type='submit' name='commentSubmit'>Edit</button>
-            </form>";
+              <button type='submit' name='commentEdit'>Edit</button>
+            </form>
+            </div>";
       ?>
 
     </div>

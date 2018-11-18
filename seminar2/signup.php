@@ -12,12 +12,14 @@
     <div class="bg-image">
 
       <header>
-        <?php require 'resources/fragments/header.php' ?>
+        <?php require 'resources/fragments/header.php'?>
       </header>
 
       <main>
+
+        <h1>Signup</h1>
         <div class="signup-form">
-          <form action="resources/includes/signup.inc.php" method="post">
+          <form action="resources/includes/access.php" method="post">
             <input type="text" name="uid" placeholder="Username">
             <input type="text" name="mail" placeholder="E-mail">
             <input type="password" name="pwd" placeholder="Password">

@@ -30,8 +30,7 @@
           <li><p>2 large eggs</p></li>
           <li><p>1/4 cup melted butter</p></li>
         </ul>
-
-        <p>&nbsp;</p>
+        <br>
         <p>Directions:</p>
         <ol class="directions">
           <li><p>In a large mixing bowl, sift together flour, sugar baking powder,
@@ -46,11 +45,9 @@
         <img src="resources/images/pancakes_1.jpg" alt="Tasty pancakes" style="width:250px;height:250px;">
         </div>
 
-        <div class="comments">
-          <p>"Wow. Very breakfast. Is not pan or cake. Much fluffy. Dis Ihob?"</p>
-          <p>- Doge </p>
-          <img src="resources/images/doge_approves.png" alt="Doge" style="width:100px;height:100px;">
-        </div>
+        <?php require 'resources/fragments/commentForm.php'?>
+        <?php require 'resources/fragments/getComments.php'?>
+
       </main>
 </div>
 </body>

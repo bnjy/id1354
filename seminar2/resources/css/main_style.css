@@ -1,5 +1,5 @@
 body{
-	background-color: #D3D3D3;
+	background-color: #fff;
 }
 
 main{
@@ -19,6 +19,9 @@ h1
 	text-align: center;
 	position: relative;
 	line-height: 2em;
+	width: 10em;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h2
@@ -55,14 +58,21 @@ p
 	color: black;
 }
 
+
 .bg-image
 {
 	background-image: url("../images/pic2.jpg");
-	height: 130vh;
+	height: 170vh;
 	background-position: center;
 	background-size: cover;
 	position: relative;
 	background-repeat: repeat;
+}
+
+
+.php-message{
+	text-align: center;
+	position: relative;
 }
 
 .head
@@ -77,9 +87,11 @@ p
 {
 	font-family: Arial, sans-serif;
 	font-weight: bold;
-	position: absolute;
 	margin: 20px;
-	width: auto;
+	width: 29.7em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 .navbar ul
@@ -109,28 +121,73 @@ p
   color: black;
 }
 
-.navbar a.active
-{
-	background-color: #59C43C;
-	color: white;
+.navbar form {
+	float: left;
+  text-align: center;
+  padding: 12px 9px;
+  font-size: 1em;
+	background-color: #ddd;
+	color: black;
 }
 
-.login-form form {
-	margin: 2em;
-	width: 130px;
-	margin-left: auto;
-	margin-right: auto;
+.navbar button{
+	border: none;
+	background-color: #ddd;
+	color: black;
+	text-align: center;
+	font-size: 1em;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
 }
 
 .signup-form form{
-	margin: 2em;
-	width: 130px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 200px;
+	margin: auto;
 }
-.php-message{
-	text-align: center;
-	position: relative;
+
+.signup-form input{
+	padding: 12px 20px;
+	margin: 8px 0;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
+.signup-form button{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
+.login-form form{
+	float: left;
+	margin-left: 2em;
+}
+
+.login-form input{
+	width: 35%;
+	padding: 12px 20px;
+	margin: 5px 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
+.login-form button{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 22px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
 }
 
 @media only screen and (max-width: 480px) {
@@ -153,5 +210,4 @@ p
 		font-size: .8em;
 		text-align: center;
 	}
-
 }

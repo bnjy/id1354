@@ -33,7 +33,7 @@
         <td>1</td>
         <td>2</td>
         <td>3</td>
-        <td id="meatballs"><a href="meatballs.html">
+        <td id="meatballs"><a href="meatballs.php">
           <img src="resources/images/meatballs_1.jpg" alt="Tasty meatballs"
            style="width:110px;height:110px;"></a></td>
         <td>5</td>
@@ -53,7 +53,7 @@
         <td>14</td>
         <td>15</td>
         <td>16</td>
-        <td id="pancakes"><a href="pancakes.html">
+        <td id="pancakes"><a href="pancakes.php">
           <img src="resources/images/pancakes_1.jpg" alt="Tasty pancakes"
            style="width:110px;height:110px;"></a></td>
         <td>18</td>
