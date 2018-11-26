@@ -16,6 +16,7 @@
                 <li class="nav-item"><a class="nav-link" href="/calendar">Calendar</a></li>
                 <li class="nav-item"><a class="nav-link" href="/meatballs">Meatballs</a></li>
                 <li class="nav-item"><a class="nav-link" href="/pancakes">Pancakes</a></li>
+                <li class="nav-item"><a class="nav-link" href="/comments">Comments</a></li>
 
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">

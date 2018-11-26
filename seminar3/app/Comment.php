@@ -15,4 +15,9 @@ class Comment extends Model
   //timestamps
 
   public $timestamps = true;
+
+  // A single comment belongs to a user.
+  public function user(){
+    return $this->belongsTo('App\User');
+  }
 }

@@ -17,6 +17,12 @@ Route::get('/meatballs', 'PagesController@meatballs');
 Route::get('/pancakes', 'PagesController@pancakes');
 Route::get('/login', 'PagesController@login');
 
+Route::get('/comments', 'PagesController@comments');
+
+//Route to be able to display the comment section on recipe pages.
+Route::get('/meatballs', 'CommentsController@showComments');
+Route::get('/pancakes', 'CommentsController@showComments');
+
 Route::resource('comments', 'CommentsController');
 
 Auth::routes();

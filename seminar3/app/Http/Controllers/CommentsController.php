@@ -8,6 +8,16 @@ use App\Comment;
 class CommentsController extends Controller
 {
     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -43,7 +53,7 @@ class CommentsController extends Controller
         // Create comment
 
         $comment = new Comment;
-        $comment->userIdComment = 'test_user_to_be_set';
+        $comment->userIdComment = auth()->user()->name;
         $comment->comment = $request->input('comment');
         $comment->save();
 
@@ -58,7 +68,7 @@ class CommentsController extends Controller
      */
     public function show($id)
     {
-        //
+      //
     }
 
     /**
@@ -89,7 +99,6 @@ class CommentsController extends Controller
       // Create comment
 
       $comment = Comment::find($id);
-      $comment->userIdComment = 'test_user_to_be_set';
       $comment->comment = $request->input('comment');
       $comment->save();
 
@@ -107,5 +116,10 @@ class CommentsController extends Controller
         $comment = Comment::find($id);
         $comment->delete();
         return redirect('/comments')->with('success', 'Comment removed');
+    }
+
+    public function showComments(){
+        $comments = Comment::all();
+        return view('pages.meatballs')->with('comments', $comments);
     }
 }

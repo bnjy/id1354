@@ -27,4 +27,13 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function username(){
+      return 'username';
+    }
+
+    //A user can have many comments.
+    public function comments(){
+      return $this->hasMany('App\Comment');
+    }
 }
