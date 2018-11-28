@@ -7,6 +7,7 @@ use App\Comment;
 
 class CommentsController extends Controller
 {
+
     /**
      * Create a new controller instance.
      *
@@ -51,7 +52,6 @@ class CommentsController extends Controller
         ]);
 
         // Create comment
-
         $comment = new Comment;
         $comment->userIdComment = auth()->user()->name;
         $comment->comment = $request->input('comment');
@@ -118,8 +118,12 @@ class CommentsController extends Controller
         return redirect('/comments')->with('success', 'Comment removed');
     }
 
-    public function showComments(){
+    public function showRecipe($recipe){
+        echo $recipe;
+    }
+
+    public static function showComments(){
         $comments = Comment::all();
-        return view('pages.meatballs')->with('comments', $comments);
+        return $comments;
     }
 }

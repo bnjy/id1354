@@ -30,10 +30,4 @@ class PagesController extends Controller
     public function comments(){
       return view('comments.index');
     }
-/*
-    public function showComments(){
-        $comments = Comment::all();
-        return view('pages.meatballs')->with('comments', $comments);
-    }
-*/
 }

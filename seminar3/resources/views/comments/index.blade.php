@@ -2,6 +2,6 @@
 
 @section('content')
 
-@include('comments.show')
+@include('inc.show-comments')
 
 @endsection

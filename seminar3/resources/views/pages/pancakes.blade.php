@@ -6,6 +6,6 @@
 
 @include('comments.create')
 
-@include('comments.show')
+@include('inc.show-comments')
 
 @endsection

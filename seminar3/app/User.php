@@ -28,6 +28,11 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    /**
+     * Returns the username.
+     *
+     * @var array
+     */
     public function username(){
       return 'username';
     }
