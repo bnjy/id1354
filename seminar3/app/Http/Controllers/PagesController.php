@@ -16,11 +16,13 @@ class PagesController extends Controller
     }
 
     public function meatballs(){
-      return view('pages.meatballs');
+      $title = 'Meatballs';
+      return view('pages.meatballs', compact('title'));
     }
 
     public function pancakes(){
-      return view('pages.pancakes');
+      $title = 'Pancakes';
+      return view('pages.pancakes', compact('title'));
     }
 
     public function login(){

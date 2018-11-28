@@ -47,6 +47,7 @@ class CommentsController extends Controller
      */
     public function store(Request $request)
     {
+
         $this->validate($request, [
             'comment' => 'required'
         ]);
@@ -115,15 +116,11 @@ class CommentsController extends Controller
     {
         $comment = Comment::find($id);
         $comment->delete();
-        return redirect('/comments')->with('success', 'Comment removed');
-    }
-
-    public function showRecipe($recipe){
-        echo $recipe;
+        return redirect()->back();
     }
 
     public static function showComments(){
-        $comments = Comment::all();
+        $comments = Comment::latest('created_at')->get();
         return $comments;
     }
 }

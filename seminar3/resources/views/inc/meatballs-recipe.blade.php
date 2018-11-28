@@ -1,6 +1,6 @@
 <br>
 <main>
-  <h1>Meatballs</h1>
+  <h1>{{$title}}</h1>
   <div class ="row">
     <div class="col-md-4 mx-auto">
         <div class="recipe-ingredients">

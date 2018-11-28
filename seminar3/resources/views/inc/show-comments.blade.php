@@ -1,7 +1,6 @@
 <?php use \App\Http\Controllers\CommentsController; ?>
 <?php $comments = CommentsController::showComments(); ?>
-<?php
-?>
+
 <br>
 <h1>Comments</h1>
 @if(count($comments) > 0)
