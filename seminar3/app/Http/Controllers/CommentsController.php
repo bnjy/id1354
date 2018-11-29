@@ -56,8 +56,10 @@ class CommentsController extends Controller
         $comment = new Comment;
         $comment->userIdComment = auth()->user()->name;
         $comment->comment = $request->input('comment');
-        //$comment->recipe = $request->input('title');
         $comment->save();
+
+
+        //$comment->recipe = $request->input('title');
 
         return redirect('/comments')->with('success', 'Comment created');
     }
