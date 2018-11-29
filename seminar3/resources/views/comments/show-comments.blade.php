@@ -1,5 +1,6 @@
 <?php use \App\Http\Controllers\CommentsController; ?>
-<?php $comments = CommentsController::showComments(); ?>
+<?php $commentsController = new CommentsController();?>
+<?php $comments = $commentsController->showComments(); ?>
 
 <br>
 <h1>Comments</h1>

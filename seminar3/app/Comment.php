@@ -21,6 +21,7 @@ class Comment extends Model
     return $this->belongsTo('App\User');
   }
 
+  // Author of the comments
   public function author(){
     return $this->belongsTo(User::class, 'user_id');
   }

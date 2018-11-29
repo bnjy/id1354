@@ -18,6 +18,8 @@ Route::get('/login', 'PagesController@login');
 Route::get('/comments', 'PagesController@comments');
 Route::get('/dashboard', 'DashboardController@index');
 
+//Route::get('/comments/{recipe}', 'ComemntsController@store');
+
 Route::resource('comments', 'CommentsController');
 
 Auth::routes();

@@ -56,6 +56,7 @@ class CommentsController extends Controller
         $comment = new Comment;
         $comment->userIdComment = auth()->user()->name;
         $comment->comment = $request->input('comment');
+        //$comment->recipe = $request->input('title');
         $comment->save();
 
         return redirect('/comments')->with('success', 'Comment created');
@@ -97,8 +98,7 @@ class CommentsController extends Controller
           'comment' => 'required'
       ]);
 
-      // Create comment
-
+      // Update comment
       $comment = Comment::find($id);
       $comment->comment = $request->input('comment');
       $comment->save();
@@ -119,7 +119,7 @@ class CommentsController extends Controller
         return redirect()->back();
     }
 
-    public static function showComments(){
+    public function showComments(){
         $comments = Comment::latest('created_at')->get();
         return $comments;
     }
