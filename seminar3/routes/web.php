@@ -16,6 +16,7 @@ Route::get('/meatballs', 'PagesController@meatballs');
 Route::get('/pancakes', 'PagesController@pancakes');
 Route::get('/login', 'PagesController@login');
 Route::get('/comments', 'PagesController@comments');
+//Route::get('/dashboard', 'PagesController@dashboard');
 Route::get('/dashboard', 'DashboardController@index');
 
 //Route::get('/comments/{recipe}', 'ComemntsController@store');

@@ -26,6 +26,6 @@ class DashboardController extends Controller
     {
         $username = auth()->user()->name;
         $user = User::find($username);
-        return view('dashboard');
+        return view('pages.dashboard');
     }
 }
