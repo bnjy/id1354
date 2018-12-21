@@ -34,3 +34,9 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+
+
+// $('#login-form').on('Submit') function(e){
+//   e.preventDefault();
+//   console.log('A submit was detected')
+// }
