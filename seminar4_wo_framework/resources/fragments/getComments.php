@@ -1,6 +1,6 @@
     <script>
       $(document).ready(function(){
-        var commentsCount = 1;
+        var commentsCount = 0;
         $("#comments-button").click(function() {
           commentsCount = commentsCount + 1;
           $('#load-comment-div').load("resources/includes/showComments.php", {
