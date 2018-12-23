@@ -53,9 +53,6 @@
     <?php require 'resources/fragments/commentForm.php'?>
     <?php require 'resources/fragments/getComments.php'?>
 
-    
-
-
   </main>
   </div>
 </body>
