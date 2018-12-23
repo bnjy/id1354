@@ -1,5 +1,5 @@
 <?php
-  require '/Users/Roth/Sites/seminar2/resources/includes/dbh.inc.php';
+  require '/Users/Roth/Sites/seminar4/resources/includes/dbh.inc.php';
   $mailuid = $_POST['usernamePHP'];
   $password = $_POST['passwordPHP'];
   if(empty($mailuid) || empty($password)){
