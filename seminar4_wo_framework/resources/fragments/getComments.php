@@ -1,10 +1,12 @@
     <script>
       $(document).ready(function(){
-        var commentsCount = 0;
+        //var commentsCount = 0;
         $("#comments-button").click(function() {
-          commentsCount = commentsCount + 1;
-          $('#load-comment-div').load("resources/includes/showComments.php", {
-            commentNewCount: commentsCount
+          $.get("resources/includes/showComments.php", function(data) {
+            var res = $.parseJSON(data);
+            $( ".uidComment" ).html( res.user );
+            $( ".commentDate" ).html( res.date );
+            $( ".message" ).html( res.message );
           });
         });
       });
@@ -42,7 +44,14 @@
     echo "</div>";
   }
   ?>
-  <div id='load-comment-div'></div>
+
+  <div id='load-comment-div'>
+    <div class='comment-box'>
+    <p class='uidComment'></p>
+    <p class='commentDate'></p>
+    <p class='message'></p>
+    </div>
+  </div>
 
   <button id='comments-button'>Show more comments</button>
 
